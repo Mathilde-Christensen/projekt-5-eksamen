@@ -51,6 +51,22 @@ ul {
     list-style-type: none;
 }
 
+button {
+    width: 102px;
+    height: 30.108px;
+    border-radius: 33px;
+    background: #72483C;
+    border: 0px;
+    color: #210700;
+    font-family: Inter;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem;
+    color: #FFFCF8;
+    font-weight: 900;
+}
+
 /* Header */
 .top__logo__img {
     width: 6.6875rem;
@@ -114,10 +130,34 @@ ul {
     padding: 0rem 0rem 1rem 0rem;
 }
 
+/*forside design selv*/
+
+.forside__designselv__tekst {
+    margin: 30px 20px 15px 20px;
+}
+
+.forside__designselv__p {
+    padding: 15px 0px;
+}
+
+.placeholder__forside__img {
+    width: 100%;
+    padding: 0px 20px 15px 20px;
+}
+
 /* forside butikken*/
 
 .forside__butikken__img {
     width: 100%;
+    padding: 0px 20px 15px 20px;
+}
+
+.forsiden__butikken__tekst {
+    margin: 0px 20px 15px 20px;
+}
+
+.forside__butikken__p {
+    padding: 15px 0px;
 }
 
 @media (min-width: 600px) {
@@ -158,6 +198,12 @@ ul {
         line-height: 1rem; /* 150% */
     }
 
+    button {
+        width: 130px;
+        height: 39px;
+        font-size: 0.8rem;
+    }
+
     /* hero */
     .hero {
         height: 27rem;
@@ -172,6 +218,7 @@ ul {
         justify-content: center;
         margin: 30px;
     }
+
     
 }
 
@@ -212,6 +259,12 @@ ul {
         line-height: 1.875rem; /* 150% */
     }
 
+    button {
+        width: 200px;
+        height: 59px;
+        font-size: 1rem;
+    }
+
     /*header*/
     .top__logo__img {
         width: 182px;
@@ -240,29 +293,63 @@ ul {
 
     .header__desktop__bottom {
         width: 100%;
-        height: 60px;
+        height: 50px;
         background: #D9C4B0;
+    }
+
+    .nav__desktop__li:hover {
+        color: #72483C;
+        font-weight: 900;
     }
 
     .header__desktop__nav {
         display: flex;
         justify-content: center;
-    }
-
-    .header__desktop__nav {
+        align-items: center;
         color: #000;
         font-family: Inter;
-        font-size: 20px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
 
+    .nav__desktop__dropdown {
+        position: relative;
+    }
+
+    .desktop__dropdown__link:hover {
+        color: #72483C;
+        font-weight: 900;
+    }
+
     .header__desktop__ul {
         display: flex;
         gap: 30px;
+        margin-top: 15px;
     }
     
+    .desktop__dropdown__ul {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        border-radius: 1.25rem;
+        font-size: 0.8rem;
+    }
+
+    .desktop__dropdown__li {
+        padding: 5px 0px;
+    }
+
+    .desktop__dropdown__link:hover {
+        color: #72483C;
+        font-weight: 900;
+    }
+
+    .nav__desktop__dropdown:hover .desktop__dropdown__ul {
+        display: block;
+    }
+
     /* hero */
 
     .hero__billede__mobil {
