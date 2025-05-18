@@ -44,14 +44,138 @@ p {
 
 a {
     text-decoration: none;
+    color: #210700;;
 }
 
 ul {
     list-style-type: none;
 }
 
-@media (min-width: 600px) {
+/* Header */
+.top__logo__img {
+    width: 6.6875rem;
+    height: 1.9375rem;
+    margin-top: 8px;
+}
 
+.header__top__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.header__top {
+    background: #84917F;
+    width: 100%;
+    height: 48px;
+}
+
+.header__desktop {
+    display: none;
+}
+
+.header__mobil__bottom {
+    width: 100%;
+    height: 15px;
+    background: #D9C4B0;
+}
+
+/* hero */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 17.5rem;
+    overflow: hidden;
+    background-color: #D9C4B0;
+}
+
+.hero__billede__disktop {
+    display: none;
+}
+
+.hero__billede__mobil {
+    width: 100%;
+    opacity: 0.3;
+    display: block;
+    position: absolute;
+    object-fit: cover;
+}
+
+.hero__text {
+    width: 100%;
+    height: 17.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.hero__p {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+/* forside butikken*/
+
+.forside__butikken__img {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    
+    h1 {
+        color: #000;
+        font-family: Merriweather;
+        font-size: 2.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    h2 {
+        color: #210700;
+        font-family: Merriweather;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    h3 {
+        color: #210700;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    p {
+        color: #210700;
+        font-family: Inter;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1rem; /* 150% */
+    }
+
+    /* hero */
+    .hero {
+        height: 27rem;
+    }
+
+    .hero__text {
+        width: 100%;
+        height: 27rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
     h1 {
         color: #000;
         font-family: Merriweather;
@@ -88,8 +212,83 @@ ul {
         line-height: 1.875rem; /* 150% */
     }
 
-}
+    /*header*/
+    .top__logo__img {
+        width: 182px;
+        height: 53px;
+        margin-top: 18px;
+    }
+    
+    .header__top__logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header__top {
+        background: #84917F;
+        width: 100%;
+        height: 90px;
+    }
+    
+    .header__desktop {
+        display: block;
+    }
+    
+    .header__mobil__bottom {
+        display: none;
+    }
 
-@media (min-width: 1024px) {
+    .header__desktop__bottom {
+        width: 100%;
+        height: 60px;
+        background: #D9C4B0;
+    }
+
+    .header__desktop__nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__desktop__nav {
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .header__desktop__ul {
+        display: flex;
+        gap: 30px;
+    }
+    
+    /* hero */
+
+    .hero__billede__mobil {
+        display: none;
+    }
+
+    .hero__billede__disktop {
+        width: 100%;
+        opacity: 0.3;
+        display: block;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    .hero {
+        height: 39rem;
+    }
+
+    .hero__text {
+        width: 100%;
+        height: 27rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 60px;
+    }
 
 }
